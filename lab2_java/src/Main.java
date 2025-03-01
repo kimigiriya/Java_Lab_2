@@ -14,7 +14,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        // Демонстрация работы класса Button
+        // Task 1. Демонстрация работы класса Button
         Button button = new Button();
         button.click();
         button.click();
@@ -22,7 +22,7 @@ public class Main {
 
         System.out.println();
 
-        // Демонстрация работы класса Balance
+        // Task 2. Демонстрация работы класса Balance
         Balance balance = new Balance();
         balance.addRight(10);
         balance.addLeft(5);
@@ -35,7 +35,7 @@ public class Main {
 
         System.out.println();
 
-        // Демонстрация работы класса Bell
+        // Task 3. Демонстрация работы класса Bell
         Bell bell = new Bell();
         bell.sound();
         bell.sound();
@@ -44,7 +44,7 @@ public class Main {
 
         System.out.println();
 
-        // Демонстрация работы класса OddEvenSeparator
+        // Task 4. Демонстрация работы класса OddEvenSeparator
         OddEvenSeparator separator = new OddEvenSeparator();
         separator.addNumber(1);
         separator.addNumber(2);
@@ -58,7 +58,7 @@ public class Main {
 
         System.out.println();
 
-        // Демонстрация работы класса Table
+        // Task 5. Демонстрация работы класса Table
         Table table = new Table(3, 4);
         table.setValue(0, 0, 1);
         table.setValue(1, 2, 5);
@@ -73,7 +73,7 @@ public class Main {
 
         System.out.println();
 
-        // Демонстрация работы классов из пакетов geometry2d и geometry3d
+        // Task 6. Демонстрация работы классов Фигур и их исключений
         try {
             Circle circle = new Circle(5);
             Rectangle rectangle = new Rectangle(4, 6);
@@ -102,11 +102,10 @@ public class Main {
 
         System.out.println();
 
-        // Дополнительная демонстрация с использованием случайных значений
         Random random = new Random();
 
         try {
-            double radius = random.nextDouble() * 10; // Случайный радиус до 10
+            double radius = random.nextDouble() * 10; 
             Circle randomCircle = new Circle(radius);
             System.out.println("Случайный круг: " + randomCircle);
             System.out.println("Площадь случайного круга: " + randomCircle.area());
